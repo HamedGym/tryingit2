@@ -1,0 +1,208 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #212121;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #FF4500;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.classes {
+  text-align: center;
+  padding: 4rem;
+}
+
+.class-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(0);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-links.active {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  /* Adjust class cards */
+  .class-card {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .classes {
+    padding: 2rem 1rem;
+  }
+}
+.hamedimg{
+  margin-top: 10px;
+  display: inline;
+  width: 140px;
+  box-shadow: 0 0 12px;
+  border-radius: 40px;
+  transition: transform 0.3s ease;
+}
+.class{
+  box-shadow: 0 0 12px;
+  border-radius: 8px;
+}
+.a{
+  color: white;
+}
+.class-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.class-card img {
+  transition: transform 0.3s ease;
+}
+
+
+.our-classes{
+  position: relative;
+  bottom: 15px;
+}
+/* ... Previous CSS code ... */
+
+/* Coaches page specific styles */
+.coaches {
+    text-align: center;
+    padding: 4rem;
+}
+
+.coach-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.coach-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .coach-card {
+        padding: 1rem;
+    }
+}
+.hamedimg:hover{
+  transform: scale(1.1) translateX(5px);
+}
